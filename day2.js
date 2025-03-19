@@ -502,8 +502,86 @@ console.log(stringRepeat.repeat(10))
 
 //Checking data types and casting
 
+// To check data types of a certain variable we use typeof operator
 
+let firstNamesss = 'Ankit'
+let lastNamesss = 'Patel'
+let countryss = 'India'
+let cityss = 'Jaipur'
+let languagess = 'Javascript'
+let agess = 26
+let jobss
+let isMarried = true
 
+console.log(typeof firstNamesss)
+console.log(typeof lastNamesss)
+console.log(typeof countryss)
+console.log(typeof cityss)
+console.log(typeof languagess)
+console.log(typeof agess)
+console.log(typeof jobss)
+console.log(typeof isMarried)
+console.log(typeof null)
+console.log(typeof undefined)
+console.log(typeof NaN)
+console.log(typeof Infinity)
+console.log(typeof Symbol)
 
+//Changing data types (Type casting)
 
+//Type casting is when you change data from one type to another.
+//There are two types of casting
+//Implicit casting
+//Explicit casting
+// Implicit casting is done by javascript automatically
+// Explicit casting is done by developers
+//converting one data type to another data type we use parseInt(), parseFloat(), Number(), String(), Boolean() +sign, str()
+//when wr do arithmetic operation on string number it should we converted to number first. if not it returns an error
 
+//String to Int
+
+//We can convert string to integer using parseInt() function. But we can also use Number() function to convert string to integer.
+// We can use + sign to convert string to number.
+
+let numsss ='10'
+let numInt = parseInt(numsss)
+let numNumber = Number(numsss)
+let numSign = +numsss
+console.log(numsss)
+console.log(numInt)
+console.log(numNumber)
+console.log(numSign)
+
+//String to Float
+
+//We can convert string float number to a float number. Any float number inside a quote is a string float number. 
+// An example of a string float number: '9.81', '3.14', '1.44', etc. We can convert string float to number using the following methods:
+
+//parseFloat()
+//Number()
+// Plus sign(+)
+
+let floatNumber = '9.81'
+let floatNumberParse = parseFloat(floatNumber)
+let floatNumberNumber = Number(floatNumber)
+let floatNumberSign = +floatNumber
+
+console.log(floatNumber)
+console.log(floatNumberParse)
+console.log(floatNumberNumber)
+console.log(floatNumberSign)
+
+//Float to Int
+// We can convert float to integer using parseInt() function. But we can also use Math.floor(), Math.ceil(), Math.round() functions to convert float to integer.
+
+let floatNum = 9.81
+let floatNumParse = parseInt(floatNum) //round down
+let floatNumFloor = Math.floor(floatNum) //round down
+let floatNumCeil = Math.ceil(floatNum) //round up
+let floatNumRound = Math.round(floatNum)   //round to the nearest integer
+
+console.log(floatNum)
+console.log(floatNumParse)
+console.log(floatNumFloor)
+console.log(floatNumCeil)
+console.log(floatNumRound)
