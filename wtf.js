@@ -102,3 +102,29 @@ console.log('string' instanceof String)
 instanceof operator checks if the object is an instance of a specific object type.
 String is an object type. 'string' is a primitive value. */
 
+//2010 02 15 accidental global
+// (function(){
+//     var x=y=1;
+// })();
+
+// console.log(x)
+// console.log(y)
+
+//2010 02 15 careful
+
+console.log([] == ![])
+/* 
+empty array truthy than ! this make false
+empty[] == false 
+false become zero
+when object compared to number js convert the object to primitve value
+empty [] convert to empty string ''
+empty string coerced to number 0
+
+so 0==0 true
+*/
+
+//2010 02 15 coerce equality
+
+console.log(3 == '3')
+console.log(3 === '3')
