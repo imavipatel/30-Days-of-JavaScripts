@@ -112,3 +112,82 @@ console.log(typeof '10' == typeof 10)
 console.log(typeof parseInt('10') == typeof 10)
 
 // Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+console.log(parseFloat('9.8') == 10)
+console.log(Math.ceil(parseFloat('9.8')) == 10)
+
+//check if 'on' is found in both python and jargon
+let python = 'python'
+let jargon = 'jargon'
+console.log(python.includes('on'))  
+console.log(jargon.includes('on'))
+
+// I hope this course is not full of jargon. Check if jargon is in the sentence.
+let sentence1 = 'I hope this course is not full of jargon'
+console.log(sentence1.includes('jargon'))
+
+// Generate a random number between 0 and 100 inclusively.
+
+console.log(Math.floor(Math.random() * 101))
+
+// Generate a random number between 50 and 100 inclusively.
+
+console.log(Math.floor(Math.random()* 51)+50)
+
+//Generate a random number between 0 and 255 inclusively.
+
+console.log(Math.floor(Math.random()*256))
+
+//Access the 'JavaScript' string characters using a random number.
+
+let str = 'Javascript'
+let randomIndex = Math.floor(Math.random()* str.length)
+console.log(randomIndex)
+console.log(str[randomIndex])
+
+//Use console.log() and escape characters to print the following pattern.
+// 1 1 1 1 1
+// 2 1 2 4 8
+// 3 1 3 9 27
+// 4 1 4 16 64
+// 5 1 5 25 125
+
+console.log('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125')
+
+// Use substr to slice out the phrase because because because in the following sentence:
+// 'You cannot end a sentence with because because because is a conjunction'
+
+let sliceStr = 'You cannot end a sentence with because because because is a conjunction'
+console.log(sliceStr.indexOf('because'))
+console.log(sliceStr.substr(31,23))
+
+
+/* Exercise: Level 3 */
+
+// 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+// Count the number of word love in this sentence.
+let loveSentence = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+
+console.log(loveSentence.match(/love/gi).length)
+
+// Use match() to count the number of all because's in the following sentence:
+// 'You cannot end a sentence with because because because is a conjunction'
+console.log(sentence.match(/because/g).length)
+
+// Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+
+const replaceSentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+const cleanedSentence = replaceSentence.replace(/[%$@&#;]/g,'')
+console.log(cleanedSentence)
+
+// Calculate the total annual income of the person by extract the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+const incomeSentence = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+const numbers = incomeSentence.match(/\d+/g).map(Number)
+
+const monthlySalary = numbers[0];
+const annualBonus =  numbers[1];
+const monthlyCoursesIncome = numbers[2]
+
+const totalAnnualIncome = (monthlySalary + monthlyCoursesIncome) * 12 + annualBonus;
+
+console.log(totalAnnualIncome)
