@@ -1,3 +1,14 @@
+/* Git command to add repositery 
+
+git init
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/imavipatel/30-Days-of-JavaScripts.git
+git push origin -u master
+
+
+*/
+
 console.log('this is in external file of introduction js')
 
 let firstName
