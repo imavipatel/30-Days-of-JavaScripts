@@ -10,8 +10,10 @@ git push origin -u master
 */
 
 console.log('this is in external file of introduction js')
+console.log(firstName)
 
 let firstName
+console.log(firstName)
 
 var secondName
 
