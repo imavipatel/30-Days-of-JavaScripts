@@ -1,4 +1,5 @@
-/* 
+/*  Data Types
+
 Data types= describes the characterstics of data
 data type are of two different types
 primitive and non primitive data types
