@@ -527,4 +527,114 @@ fruitsPush.push('lime')
 console.log(fruitsPush)
 
 /*
-Re
+Removing the end element using pop
+
+pop: Removing item in the end.
+
+*/
+
+const numbersPop = [1,2,3,4,5]
+console.log(numbersPop)
+numbersPop.pop() //remove one item from the end.
+console.log(numbersPop)
+numbersPop.pop()
+console.log(numbersPop)
+
+/*
+
+Removing an element from the beginning
+
+shift: Removing one array element in the biginning of the array.
+
+*/
+
+const numbersShift = [1,2,3,4,5]
+numbersShift.shift()
+console.log(numbersShift)
+numbersShift.shift()
+console.log(numbersShift)
+
+/*
+
+Add an element from the beginning
+
+unshift: Adding array element in the beginning of the array
+
+*/
+
+const numbersUnshift = [1,2,3,4,5]
+
+console.log(numbersUnshift)
+
+numbersUnshift.unshift(0)
+
+console.log(numbersUnshift)
+
+/*
+
+Reversing array order
+
+reverse: reverse the order of an array.
+
+*/
+
+const numbersReverse = [1,2,3,4,5]
+
+console.log(numbersReverse)
+
+numbersReverse.reverse();
+
+console.log(numbersReverse)
+
+numbersReverse.reverse();
+
+console.log(numbersReverse)
+
+/*
+
+Sorting elements in array
+
+sort: arrange array elements in ascending order. 
+Sort takes a call back function, we will see how we 
+use sort with a call back function in the coming sections.
+
+*/
+
+const webTechsSort = ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node', 'MongoDB'] // List of web technologies
+
+console.log(webTechsSort)
+
+webTechsSort.sort()
+
+console.log(webTechsSort)
+
+webTechsSort.reverse()
+
+console.log(webTechsSort)
+
+/*
+Array of arrays
+
+Array can store different data types including an array itself.
+Let us create an array of arrays
+
+*/
+
+const firstNums = [1,2,3]
+const secondNums = [1,4,9]
+
+const arrayOfArray = [[1,2,3], [1,2,3]]
+
+console.log(arrayOfArray[0]) //[1,2,3]
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+
+const fullStack = [frontEnd, backEnd]
+
+console.log(fullStack)
+
+console.log(fullStack.length)
+
+console.log(fullStack[0])
+console.log(fullStack[1])
