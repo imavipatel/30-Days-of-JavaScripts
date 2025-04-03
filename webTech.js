@@ -1,0 +1,1 @@
+export const webTechsInFile = ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node', 'MongoDB']
