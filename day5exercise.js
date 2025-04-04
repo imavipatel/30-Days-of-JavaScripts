@@ -113,13 +113,32 @@ const moreThannOneO = []
 
 companies.map((item)=>{
     const find1 = item.lastIndexOf('o')
-    const find2 = item.indexOf('0')
+    const find2 = item.indexOf('o')
 
     if(find1!==find2){
        moreThannOneO.push(item)
     }
 })
 console.log(moreThannOneO)
+
+const itCompaniess = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+const ContaineCompany = []
+for(let i=0; i<itCompaniess.length; i++){
+    if(itCompanies[i].includes('o')){
+        const zeroCount = itCompaniess[i];
+        let count = 0
+        for(let j=0; j< zeroCount.length; j++){
+            if( zeroCount[j] === 'o'){
+                count += 1
+            }
+        }
+        if(count>1){
+            ContaineCompany.push(itCompaniess[i])
+        }
+    }
+}
+console.log(ContaineCompany)
+
 
 //15. Sort the array using sort() method
 
@@ -347,3 +366,62 @@ const twoMiddleAge = ages.slice(middleIndexAge, middleIndexAge+2)
 
 console.log('This is my middle age', middleAge)
 console.log('This is two middle age', twoMiddleAge)
+
+//Find the average age(sum of all items divided by number of items)
+const sumOfAges = ages.reduce((acc, curr) => acc + curr, 0)
+console.log('This is sum of age', sumOfAges)
+const averageAge = sumOfAges / ages.length
+console.log('This is average age', averageAge)
+
+// Second Method
+
+let ageSum = 0
+for(let i=0; i<ages.length; i++){
+    ageSum = ageSum + ages[i]   
+}
+console.log(ageSum)
+const ageAverage = ageSum / ages.length
+console.log('This is age average', ageAverage)
+
+//Find the range of the ages(max minus min)
+const rangeOfAges = maxAge - minAge
+console.log('This is range of ages', rangeOfAges)
+
+//Compare the value of (min - average) and (max - average),
+// use abs() method and console.log the result
+
+const minAverage = Math.abs(minAge - averageAge)
+const maxAverage = Math.abs(maxAge - averageAge)
+console.log('This is min average', minAverage)
+console.log('This is max average', maxAverage)
+console.log('This is min average and max average', minAverage, maxAverage)
+
+// Slice the first ten countries from the countries array
+
+const countriesArrayOne = ['Albania', 'Bolivia', 'Canada', 'Denmark', 'Ethiopia', 'Finland', 'Germany', 'Hungary', 'Ireland', 'Japan', 'Kenya']
+
+const sliceCountries = countriesArrayOne.slice(0,10)
+
+console.log(sliceCountries)
+
+
+//Find the middle country(ies) in the countries array
+const middleIndexCountries = Math.floor(countriesArrayOne.length/2)
+const middleCountry = countriesArrayOne[middleIndexCountries]
+const twoMiddleCountries = countriesArrayOne.slice(middleIndexCountries, middleIndexCountries+2)
+console.log('This is middle country', middleCountry)
+console.log('This is two middle countries', twoMiddleCountries)
+
+// Divide the countries into two equal arrays if it is even 
+// If countries is odd, one more country for the first half.
+const countriesArrayTwo = ['Albania', 'Bolivia', 'Canada', 'Denmark', 'Ethiopia', 'Finland', 'Germany', 'Hungary', 'Ireland', 'Japan', 'Kenya']
+const middleIndexCountriesTwo = Math.floor(countriesArrayTwo.length/2)
+const firstHalf = countriesArrayTwo.slice(0, middleIndexCountriesTwo)
+const secondHalf = countriesArrayTwo.slice(middleIndexCountriesTwo)
+console.log('This is first half', firstHalf)
+console.log('This is second half', secondHalf)
+
+firstHalf.push('India')
+
+console.log('Updated first half', firstHalf)
+console.log('This is second half', secondHalf)
