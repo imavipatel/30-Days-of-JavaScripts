@@ -297,9 +297,9 @@ should be all the time two digits (7 hours should be 07 and 5 minutes should be 
 const dates = new  Date()
 const getYears = dates.getFullYear()
 const getMonth = (dates.getMonth()+1).toString().padStart(2,'0')
-const getDate = (dates.getDate()+1).toString().padStart(2,'0')
+const getDate = (dates.getDate()).toString().padStart(2,'0')
 const getHours = dates.getHours().toString().padStart(2,'0')
-const getMinute = dates.getMinutes(2).toString().padStart(2,'0')
+const getMinute = dates.getMinutes().toString().padStart(2,'0')
 
 console.log(`${getYears}-${getMonth}-${getDate} ${getHours}:${getMinute}`)
 
