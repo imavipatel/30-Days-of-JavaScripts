@@ -126,7 +126,7 @@ let month = prompt('Enter the month').toLowerCase();
 
 switch(month){
     case 'september':
-    case 'October':
+    case 'october':
     case 'november':
         console.log('Season is Autumn.')
         break;
