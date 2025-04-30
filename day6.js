@@ -118,7 +118,108 @@ Do while loop
 
 */
 
+console.log('This is do while loop')
 
+let j = 0
+do{
+    console.log(j)
+    j++
+}while(j<=5)
+
+
+console.log('This is for of loop')
+/*
+
+for of loop
+
+We use for of loop for arrays. It is very hand way to iterate through
+an array if we are not interested in the index of each element in the array.
+
+for(const element of arr){
+   //code goes here
+}
+
+*/
+
+const numberss = [1,2,3,4,5]
+
+for(const num of numberss){
+    console.log(num)
+}
+
+for(const num of numberss){
+    console.log(num * num)
+}
+
+//adding all the numbers in the array
+
+let sumss = 0
+
+for(const num of numbers){
+    sumss = sumss + num
+    //sums+= num
+}
+
+console.log(sumss)
+
+const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+]
+
+for( const tech of webTechs){
+    console.log(tech.toUpperCase())
+}
+
+for(const tech of webTechs){
+    console.log(tech[0])
+}
+
+
+const countriess = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+
+const countriessUppercase = []
+
+for(const country of countriess){
+    countriessUppercase.push(country.toUpperCase())
+}
+
+console.log(countriessUppercase)
+
+/*
+
+break
+
+Break is used to interrupt a loop
+
+*/
+
+for(let i = 0; i<=5; i++){
+    if(i==3){
+        break
+    }
+    console.log(i)
+}
+
+/*
+
+continue
+
+We use the keyword continue to skip a certain iterations 
+
+*/
+
+for(let i=0; i<=5; i++){
+    if(i==3){
+        continue
+    }
+    console.log(i)
+}
 
 
 
