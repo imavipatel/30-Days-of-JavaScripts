@@ -324,6 +324,145 @@ console.log(squareNum)
 
 Arrow Function
 
-Arrow function is an alternative to write a function, however 
+Arrow function is an alternative to write a function, however however 
+function declaration and arrow function have some minor differences.
+
+Arrow function uses arrow instead of the keyword function to declare a function.
+Lets see function declaration and arrow function.
 
 */
+
+// This is how we write normal or declaration function
+// Let us change this declaration function to an arrow function
+function squareThree(n) {
+  return n * n
+}
+
+console.log(squareThree(2))
+
+const squareFour = (n)=>{
+    return n*n
+}
+
+console.log(squareFour(2))
+
+const squareFive = n => n*n
+
+console.log(squareFive(3))
+
+
+const changeToUpperCase = arr =>{
+    const newArr = []
+    for(const element of arr){
+        newArr.push(element.toUpperCase())
+    }
+    return newArr
+}
+const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+
+console.log(changeToUpperCase(countries))
+
+
+const printFullNameThree = (firstName, lastName)=>{
+    return `${firstName} ${lastName}`
+}
+
+console.log(printFullNameThree('Ankit', 'Patel'))
+
+/*
+
+Function with default parameters
+
+Sometimes we pass default values to parameters, when we invoke the function
+if we do not pass an argument the default value will be used. Both function 
+declaration and arrow function can have a default values or values.
+
+function functionName(param=value){
+//codes
+}
+
+//calling function
+
+functionName()
+functionName(arg)
+
+*/
+
+function greetings(name='Ankit'){
+    let message = `${name}, welcome to 30 days of JavaScript!`
+    return message;
+}
+
+console.log(greetings())
+console.log(greetings('Akhilesh'))
+
+
+function generateFullName(firstName='Ankit', lastName='Patel'){
+    let space = ' '
+    let fullName  = firstName + space + lastName
+    return fullName;
+}
+
+console.log(generateFullName())
+console.log(generateFullName('Anoop', 'Patel'))
+
+function calculateAge(birthYear, currentYear=2025){
+    let age = currentYear - birthYear
+    return age
+}
+
+console.log('Age: ', calculateAge(1997))
+
+function weightOfObject(mass, gravity=9.81){
+    let weight = mass * gravity + ' N'
+    return weight;
+}
+
+console.log('Weight of an object in Newton on earth: ', weightOfObject(60))
+console.log('Weight of an object in Newton on moon: ', weightOfObject(60, 1.62))
+
+/*
+
+Default parameters with arrow function
+
+const functionName = (param = value)=>{
+    //codes
+}
+
+//calling function
+
+functionName()
+functionName(arg)
+
+*/
+
+const greetingsOne = (name='Ankit')=>{
+    let message = name + ', Welcome to 30 days of Javascript!'
+    return message;
+}
+
+console.log(greetingsOne())
+console.log(greetingsOne('Akanksha'))
+
+
+const generateFullNameOne = (firstName='Ankit', lastName='Patel')=>{
+    let space = ' '
+    let fullName = firstName + space + lastName
+    return fullName
+}
+
+
+console.log(generateFullNameOne())
+console.log(generateFullNameOne('Anoop', 'Verma'))
+
+
+const calculateAgeOne = (birthYear, currentYear=2025)=>{
+    let age  = currentYear - birthYear
+    return age;
+}
+
+console.log('Age: ', calculateAgeOne(1997))
+console.log('Age: ', calculateAgeOne(1997, 2030))
+
+
+
