@@ -136,3 +136,8 @@ console.log(3!==3)
 
 console.log('milk'.length == 'meat'.length)
 console.log('python'.length == 'jargon'.length)
+
+
+//2010 02 15 firebug reserved
+
+var console = {}

@@ -465,4 +465,10 @@ console.log('Age: ', calculateAgeOne(1997))
 console.log('Age: ', calculateAgeOne(1997, 2030))
 
 
+const weightOfObjectOne = ( mass, gravity=9.81)=> mass * gravity + 'N'
+
+console.log('Weight of an object in Newton: ', weightOfObjectOne(60))
+console.log('Weight of an object in Newton: ', weightOfObjectOne(60, 1.62))
+
+
 
