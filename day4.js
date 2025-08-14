@@ -39,16 +39,16 @@ if(condition){
 Example:
 */
 
-let num=3
+let num = 3;
 
-if(num>0){
-    console.log(`${num} is a postive number`)
+if (num > 0) {
+  console.log(`${num} is a postive number`);
 }
 
-let isRaining = true
+let isRaining = true;
 
-if(isRaining){
-    console.log('Remember to take your rain coat.')
+if (isRaining) {
+  console.log("Remember to take your rain coat.");
 }
 
 /*
@@ -65,36 +65,36 @@ If Else : If condition is true the first block will be executed, if not the else
 //     //this part of code runs for false condition
 // }
 
-let nums = 3
+let nums = 3;
 
-if(nums>0){
-    console.log(`${nums} is a positive number`)
-}else{
-    console.log(`${nums} is a negative number`)
+if (nums > 0) {
+  console.log(`${nums} is a positive number`);
+} else {
+  console.log(`${nums} is a negative number`);
 }
 
-let number = -3
+let number = -3;
 
-if(number>0){
-    console.log(`${nums} is a positive number`)
-}else{
-    console.log(`${nums} is a negative number`)
+if (number > 0) {
+  console.log(`${nums} is a positive number`);
+} else {
+  console.log(`${nums} is a negative number`);
 }
 
-let isRainings = true
+let isRainings = true;
 
-if(isRainings){
-    console.log('You need a rain coat.')
-}else{
-    console.log('No need for a rain coat.')
+if (isRainings) {
+  console.log("You need a rain coat.");
+} else {
+  console.log("No need for a rain coat.");
 }
 
-let isLighOn = false
+let isLighOn = false;
 
-if(isLighOn){
-    console.log('Yes light is on')
-}else{
-    console.log('Yes light is off')
+if (isLighOn) {
+  console.log("Yes light is on");
+} else {
+  console.log("Yes light is off");
 }
 
 /*
@@ -117,28 +117,28 @@ full of conditions. We use else if when we have multiple conditions.
 //     //code
 // }
 
-let a = 0
+let a = 0;
 
-if(a>0){
-    console.log(`${a} is a postive number`)
-}else if(a<0){
-    console.log(`${a} is a negative number`)
-}else if(a==0){
-    console.log(`${a} is zero`)
-}else{
-    console.log(`${a} is not a number`)
+if (a > 0) {
+  console.log(`${a} is a postive number`);
+} else if (a < 0) {
+  console.log(`${a} is a negative number`);
+} else if (a == 0) {
+  console.log(`${a} is zero`);
+} else {
+  console.log(`${a} is not a number`);
 }
 
-let weather = 'sunny'
+let weather = "sunny";
 
-if(weather==='rainey'){
-    console.log('You need a rain coat.')
-}else if(weather==='cloudy'){
-    console.log('It might be cold, you need a jacket.')
-}else if(weather==='sunny'){
-    console.log('Go out freely')
-}else{
-    console.log('No need for rain coat.')
+if (weather === "rainey") {
+  console.log("You need a rain coat.");
+} else if (weather === "cloudy") {
+  console.log("It might be cold, you need a jacket.");
+} else if (weather === "sunny") {
+  console.log("Go out freely");
+} else {
+  console.log("No need for rain coat.");
 }
 
 /*
@@ -167,67 +167,67 @@ The default block runs if all the cases don't satisfy the condition.
 //         //
 // }
 
-let weathers = 'cloudy'
+let weathers = "cloudy";
 
-switch(weathers){
-    case 'rainy':
-        console.log('You need a rain coat')
-        break;
-    case 'cloudy':
-        console.log('It might be cold. You need a jacket')
-        break;
-    case 'sunny':
-        console.log('Go out freely.')
-        break;
-    default:
-        console.log('No need for rain coat.')
+switch (weathers) {
+  case "rainy":
+    console.log("You need a rain coat");
+    break;
+  case "cloudy":
+    console.log("It might be cold. You need a jacket");
+    break;
+  case "sunny":
+    console.log("Go out freely.");
+    break;
+  default:
+    console.log("No need for rain coat.");
 }
 
-let dayUserInput = prompt('What day is today ?')
+let dayUserInput = prompt("What day is today ?");
 let day = dayUserInput.toLowerCase();
 
-switch(day){
-    case 'monday':
-        console.log('Today is monday.')
-        break;
-    case 'tuesday':
-        console.log('Today is tuesday.')
-        break;
-    case 'wednesday':
-        console.log('Today is wednesday.')
-        break;
-    case 'thursday':
-        console.log('Today is thursday.')
-        break;
-    case 'friday':
-        console.log('Today is friday.')
-        break;
-    case 'saturday':
-        console.log('Today is saturday.')
-        break;
-    case 'sunday':
-        console.log('Today is sunday.')
-        break;
-    default:
-        console.log('It is not a week day.')
+switch (day) {
+  case "monday":
+    console.log("Today is monday.");
+    break;
+  case "tuesday":
+    console.log("Today is tuesday.");
+    break;
+  case "wednesday":
+    console.log("Today is wednesday.");
+    break;
+  case "thursday":
+    console.log("Today is thursday.");
+    break;
+  case "friday":
+    console.log("Today is friday.");
+    break;
+  case "saturday":
+    console.log("Today is saturday.");
+    break;
+  case "sunday":
+    console.log("Today is sunday.");
+    break;
+  default:
+    console.log("It is not a week day.");
 }
 
 //Example to use conditions in the cases
 
-let numbers = prompt('Enter the number');
+let numbers = prompt("Enter the number");
 
-switch(true){
-    case numbers>0:
-        console.log('Number is positive');
-        break;
-    case numbers<0:
-        console.log('Number is negative');
-        break;
-    case numbers===0:
-        console.log('Number is zero.')
-        break
-    default:
-        console.log('Entered value is not a number.')
+switch (true) {
+  case numbers > 0:
+    console.log("Number is positive");
+    break;
+  case numbers < 0:
+    console.log("Number is negative");
+    break;
+  case numbers === 0:
+    console.log("Number is zero.");
+    break;
+  default:
+    console.log("Entered value is not a number.");
 }
 
 /*
@@ -237,11 +237,8 @@ Another way to write conditionals is using ternary operators.
 
 */
 
-let isRainingss = true
+let isRainingss = true;
 
-isRainingss ? console.log('You need a rain coat'): console.log('No need for a rain coat.')
-
-
-
-
-
+isRainingss
+  ? console.log("You need a rain coat")
+  : console.log("No need for a rain coat.");
